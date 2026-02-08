@@ -34,3 +34,9 @@ header{
     object-fit: contain;
     display: #f2f2f2;
 }
+
+/* Removes hyperlink styling */
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
