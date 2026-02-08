@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Character</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="form-page">
+    <main class="form-container">
+    <!--Nav Bar-->
+    <nav class="navbar">
+        <a href="index.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="new-character-form.html">Add Character</a>
+    </nav>
+    
+
+        <h1>Add New Character</h1>
+
+        <form>
+            <label>
+                Character Name
+                <input type="text" placeholder="Enter character name">
+            </label>
+
+            <label>
+                Universe
+                <input type="text" placeholder="e.g. League of Legends">
+            </label>
+
+            <label>
+                Role
+                <select>
+                    <option>Choose a role</option>
+                    <option>Marksman</option>
+                    <option>Mage</option>
+                    <option>Bruiser</option>
+                    <option>Assassin</option>
+                    <option>Support</option>
+                </select>
+            </label>
+
+            <label>
+                Image URL
+                <input type="url" placeholder="https://example.com/image.jpg">
+            </label>
+
+            <label>
+                Short Description
+                <textarea rows="4" placeholder="Brief character description"></textarea>
+            </label>
+
+            <button type="button">Add Character</button>
+        </form>
+    </main>
+</body>
+</html>
