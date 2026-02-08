@@ -417,7 +417,6 @@ button:hover,
     border-radius: 12px;
     margin: 20px;
     text-transform: uppercase;
-    background-color: #1f2933;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
@@ -438,3 +437,62 @@ button:hover,
     background-color: 2563eb;
 }
 
+
+/* Sidebar container */
+.details-sidebar {
+    width: 220px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+/* Toggle button */
+.sidebar-toggle {
+    width: 100%;
+    padding: 14px 18px;
+    background-color: #1f2933; /* same as navbar */
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* Champion list */
+.sidebar-list {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Collapsed state */
+.details-sidebar.collapsed .sidebar-list {
+    display: none;
+}
+
+/* Sidebar links */
+.sidebar-list a {
+    display: block;
+    padding: 8px 10px;
+    margin-bottom: 4px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #374151;
+}
+
+.sidebar-list a:hover {
+    background-color: #f1f5f9;
+}
+
+/* Active champion */
+.sidebar-list a.active {
+    background-color: #2563eb;
+    color: white;
+}

@@ -85,10 +85,40 @@ const data = {
     
 
 };
+// populate character data
 const c = data[character];
 
+// SIDEBAR
+const sidebarList = document.getElementById("championList");
 
+if (sidebarList) {
+    Object.keys(data).forEach(key => {
+        const li = document.createElement("li");
+        const link = document.createElement("a");
 
+        link.href = `details.html?character=${key}`;
+        link.textContent = data[key].name;
+
+        if (key === character) {
+            link.classList.add("active");
+        }
+
+        li.appendChild(link);
+        sidebarList.appendChild(li);
+    });
+}
+const toggleBtn = document.getElementById("toggleSidebar");
+const sidebar = document.querySelector(".details-sidebar");
+
+if (toggleBtn && sidebar) {
+    toggleBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("collapsed");
+
+        toggleBtn.textContent = sidebar.classList.contains("collapsed")
+            ? "Champions ▾"
+            : "Champions ▴";
+    });
+}
 // Display abilities and descriptions
 if (c){
 
