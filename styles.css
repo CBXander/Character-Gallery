@@ -88,15 +88,28 @@ main {
 
 /* Description page */
 
-.details {
-    background-color: transparent;
+@media (max-width: 600px) {
+    .details-page #description {
+        padding: 16px;
+        font-size: 1rem;
+    }
 }
 
-.details #description {
-    background-color: #f9fafb;
-    border-radius: 8px;
-    padding: 15px 20px;
+.details-page {
+    background-color: #f0f1f1;
+}
+
+.details-page #description {
+    font-size: 1.05rem;
+    line-height: 1.7;
     color: #4b5563;
+
+    background-color: #ffffff;
+    padding: 20px 24px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+
+    margin: 20px 0;
 }
 
 .details-page h1{
@@ -107,7 +120,7 @@ main {
     text-transform: uppercase;
     
 }
-/* Line after header */
+
 .details-page h1::after {
     content: "";
     display: block;
@@ -133,9 +146,9 @@ main {
 }
 
 .details-page .details {
-    max-width: 900;
-    margin: 0 auto;
-    padding: 30px 20px;
+    max-width: 1500px;
+    margin:  30px auto;
+    padding: 0px 20px;
 }
 
 .details-page h1 {
@@ -144,8 +157,19 @@ main {
 }
 
 .details-image.big {
-    max-width: 2000px;
+    max-width: 2000vw;
     
+}
+
+
+.details-page #abilities li {
+    background-color: #ffffff;
+    padding: 18px 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    margin-bottom: 14px;
+    list-style: none;
+    padding-left: 1;
 }
 
 
@@ -333,6 +357,6 @@ button:hover,
 }
 
 .navbar a:hover {
-    background-color: #374151;
+    background-color: 2563eb;
 }
 
