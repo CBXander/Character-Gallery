@@ -160,6 +160,26 @@ main {
     max-width: 2000vw;
     
 }
+/* Region / Role info box */
+.details-page .info-box {
+    background-color: #ffffff;
+    padding: 16px 24px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    margin: 20px 0;
+    max-width: 100px;
+}
+
+.details-page .info-box p {
+    margin: 6px 0;
+    font-size: 1.05rem;
+    color: #1f2933;
+}
+
+.details-page .info-box strong {
+    font-weight: 600;
+    color: #000;
+}
 
 
 .details-page #abilities li {
