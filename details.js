@@ -77,8 +77,25 @@ const data = {
 
 };
 const c = data[character];
+
+
+
 // Display abilities and descriptions
 if (c){
+
+    const image = document.getElementById("image");
+    const button = document.getElementById("toggleImage");
+
+    button.addEventListener("click", function () {
+        image.classList.toggle("big");
+
+        if (image.classList.contains("big")) {
+            button.textContent = "Shrink Image";
+        } else {
+            button.textContent = "Enlarge Image";
+        }
+    });
+
     document.getElementById("name").textContent = c.name;
     document.getElementById("image").src = c.image;
     document.getElementById("description").textContent = c.description;
