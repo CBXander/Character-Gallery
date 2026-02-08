@@ -440,7 +440,7 @@ button:hover,
 
 /* Toggle button */
 .sidebar-toggle {
-    width: 10%;
+    width: 15%;
     padding: 14px 18px;
     background-color: #1f2933; /* same as navbar */
     color: white;
